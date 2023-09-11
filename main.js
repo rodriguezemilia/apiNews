@@ -7,7 +7,7 @@ fetch(url)
     .then((response) => response.json())
     .then(data =>{
     console.log(data);
-    let noticias = (data.articles);
+    let noticias = data.articles;
     noticias.forEach(function(numero){
         let div = document.createElement('div');
     div.innerHTML = `<br>
